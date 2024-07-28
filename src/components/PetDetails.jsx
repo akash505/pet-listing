@@ -9,7 +9,7 @@ const PetDetails = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://pets-v2.dev-apis.com/pets?id=${id}`)
+    axios.get(`https://pets-v2.dev-apis.com/pets?id=${id}`)
       .then(response => {
         setPet(response.data.pet);
         setLoading(false);

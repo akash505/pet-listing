@@ -17,7 +17,7 @@ const PetList = () => {
   const fetchPets = (searchParams = {}) => {
     setLoading(true);
     const { animal, location, breed } = searchParams;
-    let url = `http://pets-v2.dev-apis.com/pets`;
+    let url = `https://pets-v2.dev-apis.com/pets`;
     const queryParams = [];
     if (animal) queryParams.push(`animal=${animal}`);
     if (location) queryParams.push(`location=${location}`);
